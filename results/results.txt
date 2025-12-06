@@ -1,20 +1,30 @@
 Test                           Vertices   Edges      MIS      C++ (ms)     NetworkX (ms)  
 -------------------------------------------------------------------------------------
-test1.txt                      6          4          3        3.1440       0.0324         
-test2.txt                      9          7          5        4.1196       0.0449         
-test3.txt                      13         13         7        4.2462       0.1128         
-test_large_dense.txt           200        5000       100      8.1177       2.2153         
-test_large_medium.txt          200        1000       100      4.9836       1.8761         
-test_large_sparse.txt          200        200        124      5.9544       1.7816         
-test_medium_dense.txt          100        1500       50       6.0050       0.5187         
-test_medium_medium.txt         100        500        50       4.5683       0.5519         
-test_medium_sparse.txt         100        100        61       4.2131       0.5989         
-test_small_dense.txt           20         50         10       4.6258       0.1724         
-test_small_sparse.txt          20         20         11       5.0427       0.1236         
-test_xlarge_medium.txt         350        3000       200      7.9509       1.6985         
-test_xlarge_sparse.txt         350        500        207      4.4936       2.4388         
-test_xxlarge_medium.txt        600        10000      300      11.7590      4.4518         
-test_xxlarge_sparse.txt        600        1000       321      6.1218       8.4130         
+test1.txt                      6          4          3        1.5442       0.0153         
+test2.txt                      9          7          5        1.3220       0.0207         
+test3.txt                      13         13         7        1.9251       0.0375         
+test_enormous_medium.txt       4000       100000     2000     17.0300      17.7420        
+test_enormous_sparse.txt       4000       10000      2016     10.8565      16.6015        
+test_gigantic_medium.txt       10000      250000     5000     37.3578      55.3095        
+test_gigantic_sparse.txt       10000      25000      5043     20.3588      88.5651        
+test_huge_dense.txt            1000       50000      500      14.7152      6.6438         
+test_huge_medium.txt           1000       15000      500      6.1205       2.8362         
+test_huge_sparse.txt           1000       2500       502      2.7255       4.1570         
+test_large_dense.txt           200        5000       100      2.4324       0.6752         
+test_large_medium.txt          200        1000       100      2.4701       0.4238         
+test_large_sparse.txt          200        200        119      2.8124       0.2644         
+test_massive_dense.txt         2000       200000     1000     24.0579      25.9060        
+test_massive_medium.txt        2000       50000      1000     12.0194      8.1203         
+test_massive_sparse.txt        2000       5000       1008     8.2123       9.8157         
+test_medium_dense.txt          100        1500       50       2.0421       0.2778         
+test_medium_medium.txt         100        500        50       2.9053       0.3421         
+test_medium_sparse.txt         100        100        60       2.5422       0.1555         
+test_small_dense.txt           20         50         10       2.6315       0.0640         
+test_small_sparse.txt          20         20         12       3.1162       0.0458         
+test_xlarge_medium.txt         350        3000       200      5.5316       1.3882         
+test_xlarge_sparse.txt         350        500        209      3.1709       4.4195         
+test_xxlarge_medium.txt        600        10000      300      4.3726       1.9406         
+test_xxlarge_sparse.txt        600        1000       318      2.2326       2.1055         
 
-Average C++ time: 5.6897 ms
-Average NetworkX time: 1.6687 ms
+Average C++ time: 7.7802 ms
+Average NetworkX time: 9.9149 ms
