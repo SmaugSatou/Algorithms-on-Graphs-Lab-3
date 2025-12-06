@@ -32,13 +32,13 @@ def read_graph_from_file(filename: str) -> Dict[str, any]:
 
 
 def networkx_mis_size(graph_data: Dict[str, any]) -> int:
-    """Calculate MIS size using NetworkX approximation algorithm.
+    """Calculate exact MIS size using NetworkX maximum matching and König's theorem.
     
     Args:
         graph_data: Dictionary with nU, nW, and edges.
         
     Returns:
-        Size of the maximum independent set.
+        Size of the maximum independent set (exact).
     """
     G = nx.Graph()
     nU = graph_data['nU']
@@ -53,9 +53,14 @@ def networkx_mis_size(graph_data: Dict[str, any]) -> int:
     for u, w in graph_data['edges']:
         G.add_edge(f'U{u}', f'W{w}')
     
-    mis = nx.algorithms.approximation.maximum_independent_set(G)
+    from networkx.algorithms import bipartite
+    matching = bipartite.maximum_matching(G, top_nodes=set(U_nodes))
+    max_matching_size = len(matching) // 2
     
-    return len(mis)
+    # König's theorem: MIS size = Total vertices - Maximum matching size
+    mis_size = nU + nW - max_matching_size
+    
+    return mis_size
 
 
 def cpp_mis_size(filename: str, executable: str = './build/min_vertex_cover') -> Optional[int]:
@@ -91,7 +96,7 @@ def verify_file(filename: str) -> bool:
     Returns:
         True if verification passed, False otherwise.
     """
-    print(f"Verifying {filename}...", end=' ')
+    print(f"Verifying {filename}...", end=' ', flush=True)
     
     graph_data = read_graph_from_file(filename)
     
@@ -99,14 +104,15 @@ def verify_file(filename: str) -> bool:
     cpp_size = cpp_mis_size(filename)
     
     if cpp_size is None:
-        print("FAIL (C++ execution error)")
+        print("FAIL (C++ execution error)", flush=True)
         return False
     
-    if nx_size == cpp_size:
-        print(f"PASS (MIS size: {cpp_size})")
+    # Both algorithms should give exact same result (König's theorem)
+    if cpp_size == nx_size:
+        print(f"PASS (MIS size: {cpp_size})", flush=True)
         return True
     else:
-        print(f"FAIL (Expected: {nx_size}, Got: {cpp_size})")
+        print(f"FAIL (C++ found {cpp_size}, NetworkX found {nx_size})", flush=True)
         return False
 
 
@@ -125,8 +131,13 @@ def main() -> int:
     passed = 0
     failed = 0
     
+    test_files = sys.argv[1:]
+    passed = 0
+    failed = 0
+    
     print("="*70)
-    print("Verification Against NetworkX")
+    print("Verification Against NetworkX (Exact Algorithm)")
+    print("Both implementations use König's theorem for exact MIS")
     print("="*70)
     print()
     

@@ -1,0 +1,203 @@
+======================================================================
+Maximum Independent Set - Test Results
+Date: Sat 06 Dec 2025 05:39:52 PM EET
+======================================================================
+
+----------------------------------------------------------------------
+Test: test1.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test1.txt
+Graph Info:
+  U vertices: 3
+  W vertices: 3
+  Total vertices: 6
+  Edges: 4
+\n=== Maximum Independent Set ===
+Size: 3
+Vertices: W0, W1, W2
+
+----------------------------------------------------------------------
+Test: test2.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test2.txt
+Graph Info:
+  U vertices: 5
+  W vertices: 4
+  Total vertices: 9
+  Edges: 7
+\n=== Maximum Independent Set ===
+Size: 5
+Vertices: U0, U1, U2, U4, W3
+
+----------------------------------------------------------------------
+Test: test3.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test3.txt
+Graph Info:
+  U vertices: 7
+  W vertices: 6
+  Total vertices: 13
+  Edges: 13
+\n=== Maximum Independent Set ===
+Size: 7
+Vertices: U0, U1, U2, U3, U4, U5, U6
+
+----------------------------------------------------------------------
+Test: test_large_dense.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_large_dense.txt
+Graph Info:
+  U vertices: 100
+  W vertices: 100
+  Total vertices: 200
+  Edges: 5000
+\n=== Maximum Independent Set ===
+Size: 100
+Vertices: W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, W29, W30, W31, W32, W33, W34, W35, W36, W37, W38, W39, W40, W41, W42, W43, W44, W45, W46, W47, W48, W49, W50, W51, W52, W53, W54, W55, W56, W57, W58, W59, W60, W61, W62, W63, W64, W65, W66, W67, W68, W69, W70, W71, W72, W73, W74, W75, W76, W77, W78, W79, W80, W81, W82, W83, W84, W85, W86, W87, W88, W89, W90, W91, W92, W93, W94, W95, W96, W97, W98, W99
+
+----------------------------------------------------------------------
+Test: test_large_medium.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_large_medium.txt
+Graph Info:
+  U vertices: 100
+  W vertices: 100
+  Total vertices: 200
+  Edges: 1000
+\n=== Maximum Independent Set ===
+Size: 100
+Vertices: W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, W29, W30, W31, W32, W33, W34, W35, W36, W37, W38, W39, W40, W41, W42, W43, W44, W45, W46, W47, W48, W49, W50, W51, W52, W53, W54, W55, W56, W57, W58, W59, W60, W61, W62, W63, W64, W65, W66, W67, W68, W69, W70, W71, W72, W73, W74, W75, W76, W77, W78, W79, W80, W81, W82, W83, W84, W85, W86, W87, W88, W89, W90, W91, W92, W93, W94, W95, W96, W97, W98, W99
+
+----------------------------------------------------------------------
+Test: test_large_sparse.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_large_sparse.txt
+Graph Info:
+  U vertices: 100
+  W vertices: 100
+  Total vertices: 200
+  Edges: 200
+\n=== Maximum Independent Set ===
+Size: 124
+Vertices: U1, U2, U4, U5, U6, U7, U9, U11, U12, U14, U15, U16, U18, U21, U23, U24, U25, U26, U27, U29, U30, U32, U33, U34, U37, U38, U39, U43, U45, U49, U50, U52, U53, U54, U55, U56, U59, U60, U63, U64, U66, U68, U70, U73, U77, U81, U83, U84, U85, U91, U92, U93, U94, U95, U96, W0, W1, W2, W3, W4, W6, W7, W8, W9, W10, W11, W13, W17, W18, W19, W20, W21, W23, W25, W26, W28, W29, W30, W31, W32, W33, W36, W37, W38, W39, W41, W42, W43, W46, W47, W49, W51, W52, W53, W54, W55, W56, W57, W60, W62, W65, W66, W67, W70, W71, W72, W74, W75, W76, W79, W80, W82, W84, W85, W87, W88, W90, W92, W93, W95, W96, W97, W98, W99
+
+----------------------------------------------------------------------
+Test: test_medium_dense.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_medium_dense.txt
+Graph Info:
+  U vertices: 50
+  W vertices: 50
+  Total vertices: 100
+  Edges: 1500
+\n=== Maximum Independent Set ===
+Size: 50
+Vertices: W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, W29, W30, W31, W32, W33, W34, W35, W36, W37, W38, W39, W40, W41, W42, W43, W44, W45, W46, W47, W48, W49
+
+----------------------------------------------------------------------
+Test: test_medium_medium.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_medium_medium.txt
+Graph Info:
+  U vertices: 50
+  W vertices: 50
+  Total vertices: 100
+  Edges: 500
+\n=== Maximum Independent Set ===
+Size: 50
+Vertices: W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, W29, W30, W31, W32, W33, W34, W35, W36, W37, W38, W39, W40, W41, W42, W43, W44, W45, W46, W47, W48, W49
+
+----------------------------------------------------------------------
+Test: test_medium_sparse.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_medium_sparse.txt
+Graph Info:
+  U vertices: 50
+  W vertices: 50
+  Total vertices: 100
+  Edges: 100
+\n=== Maximum Independent Set ===
+Size: 61
+Vertices: U0, U1, U2, U3, U4, U7, U10, U13, U17, U22, U24, U27, U30, U31, U33, U34, U35, U36, U37, U38, U39, U40, U41, U42, U43, U44, U45, U46, U47, U48, U49, W2, W4, W9, W11, W12, W13, W14, W17, W18, W21, W22, W23, W24, W26, W27, W28, W29, W32, W33, W35, W36, W37, W38, W41, W44, W45, W46, W47, W48, W49
+
+----------------------------------------------------------------------
+Test: test_small_dense.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_small_dense.txt
+Graph Info:
+  U vertices: 10
+  W vertices: 10
+  Total vertices: 20
+  Edges: 50
+\n=== Maximum Independent Set ===
+Size: 10
+Vertices: W0, W1, W2, W3, W4, W5, W6, W7, W8, W9
+
+----------------------------------------------------------------------
+Test: test_small_sparse.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_small_sparse.txt
+Graph Info:
+  U vertices: 10
+  W vertices: 10
+  Total vertices: 20
+  Edges: 20
+\n=== Maximum Independent Set ===
+Size: 11
+Vertices: U0, U2, U3, U5, U6, U7, U8, U9, W4, W6, W8
+
+----------------------------------------------------------------------
+Test: test_xlarge_medium.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_xlarge_medium.txt
+Graph Info:
+  U vertices: 200
+  W vertices: 150
+  Total vertices: 350
+  Edges: 3000
+\n=== Maximum Independent Set ===
+Size: 200
+Vertices: U0, U1, U2, U3, U4, U5, U6, U7, U8, U9, U10, U11, U12, U13, U14, U15, U16, U17, U18, U19, U20, U21, U22, U23, U24, U25, U26, U27, U28, U29, U30, U31, U32, U33, U34, U35, U36, U37, U38, U39, U40, U41, U42, U43, U44, U45, U46, U47, U48, U49, U50, U51, U52, U53, U54, U55, U56, U57, U58, U59, U60, U61, U62, U63, U64, U65, U66, U67, U68, U69, U70, U71, U72, U73, U74, U75, U76, U77, U78, U79, U80, U81, U82, U83, U84, U85, U86, U87, U88, U89, U90, U91, U92, U93, U94, U95, U96, U97, U98, U99, U100, U101, U102, U103, U104, U105, U106, U107, U108, U109, U110, U111, U112, U113, U114, U115, U116, U117, U118, U119, U120, U121, U122, U123, U124, U125, U126, U127, U128, U129, U130, U131, U132, U133, U134, U135, U136, U137, U138, U139, U140, U141, U142, U143, U144, U145, U146, U147, U148, U149, U150, U151, U152, U153, U154, U155, U156, U157, U158, U159, U160, U161, U162, U163, U164, U165, U166, U167, U168, U169, U170, U171, U172, U173, U174, U175, U176, U177, U178, U179, U180, U181, U182, U183, U184, U185, U186, U187, U188, U189, U190, U191, U192, U193, U194, U195, U196, U197, U198, U199
+
+----------------------------------------------------------------------
+Test: test_xlarge_sparse.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_xlarge_sparse.txt
+Graph Info:
+  U vertices: 200
+  W vertices: 150
+  Total vertices: 350
+  Edges: 500
+\n=== Maximum Independent Set ===
+Size: 207
+Vertices: U0, U1, U2, U5, U7, U8, U9, U10, U12, U13, U14, U15, U16, U17, U18, U19, U20, U21, U22, U23, U24, U25, U27, U28, U29, U30, U31, U32, U33, U35, U36, U37, U38, U40, U41, U42, U43, U44, U45, U46, U47, U49, U50, U51, U52, U53, U54, U55, U56, U57, U58, U59, U60, U61, U63, U64, U65, U66, U67, U68, U69, U70, U71, U72, U73, U74, U75, U76, U77, U79, U81, U82, U83, U84, U85, U86, U88, U89, U90, U91, U92, U93, U94, U95, U96, U97, U98, U99, U101, U102, U103, U104, U106, U107, U108, U109, U111, U112, U113, U115, U116, U117, U118, U119, U120, U122, U123, U124, U125, U126, U127, U128, U129, U130, U131, U133, U134, U135, U136, U137, U138, U139, U140, U142, U143, U145, U146, U147, U148, U149, U151, U152, U153, U154, U155, U156, U157, U158, U159, U161, U162, U163, U164, U165, U166, U167, U168, U169, U170, U171, U172, U174, U175, U176, U177, U178, U179, U180, U181, U182, U183, U184, U185, U186, U187, U188, U190, U193, U194, U195, U196, U197, U198, U199, W1, W7, W9, W10, W13, W20, W21, W22, W30, W32, W42, W44, W47, W48, W51, W63, W64, W65, W66, W69, W80, W83, W91, W97, W104, W105, W113, W117, W122, W128, W129, W135, W145
+
+----------------------------------------------------------------------
+Test: test_xxlarge_medium.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_xxlarge_medium.txt
+Graph Info:
+  U vertices: 300
+  W vertices: 300
+  Total vertices: 600
+  Edges: 10000
+\n=== Maximum Independent Set ===
+Size: 300
+Vertices: W0, W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, W25, W26, W27, W28, W29, W30, W31, W32, W33, W34, W35, W36, W37, W38, W39, W40, W41, W42, W43, W44, W45, W46, W47, W48, W49, W50, W51, W52, W53, W54, W55, W56, W57, W58, W59, W60, W61, W62, W63, W64, W65, W66, W67, W68, W69, W70, W71, W72, W73, W74, W75, W76, W77, W78, W79, W80, W81, W82, W83, W84, W85, W86, W87, W88, W89, W90, W91, W92, W93, W94, W95, W96, W97, W98, W99, W100, W101, W102, W103, W104, W105, W106, W107, W108, W109, W110, W111, W112, W113, W114, W115, W116, W117, W118, W119, W120, W121, W122, W123, W124, W125, W126, W127, W128, W129, W130, W131, W132, W133, W134, W135, W136, W137, W138, W139, W140, W141, W142, W143, W144, W145, W146, W147, W148, W149, W150, W151, W152, W153, W154, W155, W156, W157, W158, W159, W160, W161, W162, W163, W164, W165, W166, W167, W168, W169, W170, W171, W172, W173, W174, W175, W176, W177, W178, W179, W180, W181, W182, W183, W184, W185, W186, W187, W188, W189, W190, W191, W192, W193, W194, W195, W196, W197, W198, W199, W200, W201, W202, W203, W204, W205, W206, W207, W208, W209, W210, W211, W212, W213, W214, W215, W216, W217, W218, W219, W220, W221, W222, W223, W224, W225, W226, W227, W228, W229, W230, W231, W232, W233, W234, W235, W236, W237, W238, W239, W240, W241, W242, W243, W244, W245, W246, W247, W248, W249, W250, W251, W252, W253, W254, W255, W256, W257, W258, W259, W260, W261, W262, W263, W264, W265, W266, W267, W268, W269, W270, W271, W272, W273, W274, W275, W276, W277, W278, W279, W280, W281, W282, W283, W284, W285, W286, W287, W288, W289, W290, W291, W292, W293, W294, W295, W296, W297, W298, W299
+
+----------------------------------------------------------------------
+Test: test_xxlarge_sparse.txt
+----------------------------------------------------------------------
+Graph loaded from: tests/test_xxlarge_sparse.txt
+Graph Info:
+  U vertices: 300
+  W vertices: 300
+  Total vertices: 600
+  Edges: 1000
+\n=== Maximum Independent Set ===
+Size: 321
+Vertices: U9, U19, U23, U24, U31, U49, U58, U60, U90, U100, U109, U111, U113, U116, U123, U133, U135, U140, U161, U165, U170, U206, U210, U212, U213, U219, U224, U239, U250, U260, U269, U288, U293, W0, W1, W2, W3, W4, W5, W6, W7, W9, W10, W12, W13, W14, W15, W16, W17, W18, W19, W21, W22, W23, W24, W25, W26, W27, W28, W29, W30, W31, W32, W33, W34, W35, W36, W37, W38, W39, W40, W41, W42, W43, W44, W45, W46, W47, W48, W49, W50, W51, W52, W53, W54, W55, W56, W57, W58, W59, W61, W62, W63, W64, W65, W66, W67, W68, W69, W70, W71, W72, W73, W74, W75, W76, W77, W78, W79, W80, W81, W82, W83, W84, W85, W86, W87, W88, W89, W90, W91, W92, W93, W94, W95, W96, W97, W98, W99, W100, W101, W103, W104, W105, W106, W107, W108, W109, W110, W111, W112, W113, W114, W115, W116, W117, W118, W119, W120, W121, W122, W123, W124, W125, W126, W127, W128, W129, W130, W131, W132, W133, W134, W135, W136, W137, W138, W139, W140, W141, W142, W143, W144, W145, W146, W147, W148, W149, W150, W151, W152, W153, W154, W155, W156, W157, W158, W159, W160, W161, W162, W163, W164, W165, W166, W167, W168, W169, W170, W171, W172, W173, W174, W175, W176, W177, W178, W179, W181, W183, W184, W186, W187, W188, W189, W190, W191, W192, W193, W195, W196, W197, W198, W199, W200, W201, W202, W203, W204, W205, W206, W207, W209, W210, W211, W212, W213, W214, W215, W216, W217, W218, W219, W220, W221, W222, W223, W224, W225, W226, W227, W228, W230, W231, W232, W233, W234, W235, W236, W237, W238, W239, W240, W241, W242, W243, W244, W245, W246, W247, W248, W249, W250, W252, W253, W254, W255, W256, W257, W258, W259, W260, W261, W262, W263, W264, W265, W266, W267, W268, W269, W270, W271, W272, W273, W274, W275, W276, W277, W278, W279, W280, W281, W282, W283, W284, W285, W286, W287, W288, W289, W290, W291, W292, W293, W294, W295, W296, W297, W298, W299
+
+======================================================================
+All tests completed
+======================================================================

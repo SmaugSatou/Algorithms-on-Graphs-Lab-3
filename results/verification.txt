@@ -1,0 +1,24 @@
+======================================================================
+Verification Against NetworkX (Exact Algorithm)
+Both implementations use König's theorem for exact MIS
+======================================================================
+
+Verifying tests/test1.txt... PASS (MIS size: 3)
+Verifying tests/test2.txt... PASS (MIS size: 5)
+Verifying tests/test3.txt... PASS (MIS size: 7)
+Verifying tests/test_large_dense.txt... PASS (MIS size: 100)
+Verifying tests/test_large_medium.txt... PASS (MIS size: 100)
+Verifying tests/test_large_sparse.txt... PASS (MIS size: 124)
+Verifying tests/test_medium_dense.txt... PASS (MIS size: 50)
+Verifying tests/test_medium_medium.txt... PASS (MIS size: 50)
+Verifying tests/test_medium_sparse.txt... PASS (MIS size: 61)
+Verifying tests/test_small_dense.txt... PASS (MIS size: 10)
+Verifying tests/test_small_sparse.txt... PASS (MIS size: 11)
+Verifying tests/test_xlarge_medium.txt... PASS (MIS size: 200)
+Verifying tests/test_xlarge_sparse.txt... PASS (MIS size: 207)
+Verifying tests/test_xxlarge_medium.txt... PASS (MIS size: 300)
+Verifying tests/test_xxlarge_sparse.txt... PASS (MIS size: 321)
+
+======================================================================
+Results: 15 passed, 0 failed
+======================================================================
