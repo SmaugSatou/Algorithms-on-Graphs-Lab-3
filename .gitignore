@@ -40,4 +40,6 @@
 # debug information files
 *.dwo
 
-.vscode/settings.json
+.venv
+.vscode
+build
