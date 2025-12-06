@@ -1,0 +1,20 @@
+Test                           Vertices   Edges      MIS      C++ (ms)     NetworkX (ms)  
+-------------------------------------------------------------------------------------
+test1.txt                      6          4          3        4.0942       0.0580         
+test2.txt                      9          7          5        5.1586       0.0287         
+test3.txt                      13         13         7        4.9852       0.0459         
+test_large_dense.txt           200        5000       100      6.7204       1.1738         
+test_large_medium.txt          200        1000       100      4.3356       0.8414         
+test_large_sparse.txt          200        200        124      4.1865       0.8413         
+test_medium_dense.txt          100        1500       50       5.7313       0.4549         
+test_medium_medium.txt         100        500        50       3.6509       0.2824         
+test_medium_sparse.txt         100        100        61       4.1411       0.4144         
+test_small_dense.txt           20         50         10       5.3305       0.0825         
+test_small_sparse.txt          20         20         11       4.4786       0.1544         
+test_xlarge_medium.txt         350        3000       200      6.7007       1.1772         
+test_xlarge_sparse.txt         350        500        207      5.7366       1.6419         
+test_xxlarge_medium.txt        600        10000      300      7.8331       3.5125         
+test_xxlarge_sparse.txt        600        1000       321      5.8666       3.8428         
+
+Average C++ time: 5.2633 ms
+Average NetworkX time: 0.9701 ms
